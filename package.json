@@ -1,0 +1,32 @@
+{
+  "name": "pi-resume-on-exit",
+  "version": "0.1.0",
+  "description": "Print a copyable Pi resume command when an interactive Pi session exits.",
+  "type": "module",
+  "keywords": ["pi-package", "pi", "extension", "session", "resume"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mujuni88/pi-resume-on-exit.git"
+  },
+  "pi": {
+    "extensions": ["./extensions/resume-on-exit.ts"]
+  },
+  "scripts": {
+    "test": "vitest run --pool=threads --maxWorkers=1",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm test"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@mariozechner/pi-coding-agent": "^0.73.0",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  }
+}
