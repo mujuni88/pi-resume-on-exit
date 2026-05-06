@@ -3,8 +3,21 @@
   "version": "0.1.0",
   "description": "Print a copyable Pi resume command when an interactive Pi session exits.",
   "type": "module",
-  "keywords": ["pi-package", "pi", "extension", "session", "resume"],
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-extension",
+    "pi-coding-agent",
+    "extension",
+    "session",
+    "resume"
+  ],
   "license": "MIT",
+  "files": ["README.md", "extensions"],
+  "homepage": "https://github.com/mujuni88/pi-resume-on-exit#readme",
+  "bugs": {
+    "url": "https://github.com/mujuni88/pi-resume-on-exit/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mujuni88/pi-resume-on-exit.git"
