@@ -16,7 +16,7 @@ Example output:
 
 ```text
 Resume this Pi session:
-  pi --session abc123
+pi --session abc123
 ```
 
 ## Install

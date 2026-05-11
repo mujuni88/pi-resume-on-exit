@@ -1,3 +1,4 @@
+import { styleText } from "node:util";
 import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 
 export function shellQuote(value: string): string {
@@ -28,7 +29,9 @@ export default function (pi: ExtensionAPI): void {
 			);
 			if (!command) return;
 
-			process.stdout.write(`\nResume this Pi session:\n  ${command}\n\n`);
+			process.stdout.write(
+				`\n${styleText("dim", `Resume this Pi session:\n${command}`)}\n\n`,
+			);
 		} catch {
 			// Do not interfere with Pi shutdown.
 		}
